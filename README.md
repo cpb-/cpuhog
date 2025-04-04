@@ -1,3 +1,5 @@
+<p><img width="64px" src="https://github.com/cpb-/cpuhog/blob/master/doc/cpuhog-logo-small-size.png"></p>
+
 # CPUHOG
 
 "When a hog proudly stomps on the cores of your processor."
