@@ -1,3 +1,22 @@
+/*
+ * cpuhog
+ *
+ * (c) 2020-2025 Christophe BLAESS <christophe.blaess@logilin.fr>
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU General Public License,
+ * version 2, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ */
 
 #define _GNU_SOURCE
 
@@ -8,7 +27,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static char *Version     = "0.1.0";
+static char *Version       = "1.0.0";
 static int   Duration      = 60;
 static int   Fifo_priority = 0;
 static int   RR_priority   = 0;
@@ -18,6 +37,7 @@ static int  *Core_list = NULL;
 static int   Nb_cores  = 0;
 
 static pthread_barrier_t Pthread_barrier;
+
 
 
 static void display_usage(const char *name);
